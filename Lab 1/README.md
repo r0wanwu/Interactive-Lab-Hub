@@ -166,7 +166,7 @@ Our first attempt at setting it up was a successful attempt so it will be includ
 
 Device 1: Companion Jewelry
 
-![](./img/img9.png)
+![](./img9.png)
 
 Device 2: Drink Temperature Spoon
 
