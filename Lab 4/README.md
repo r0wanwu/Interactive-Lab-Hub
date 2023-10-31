@@ -205,7 +205,7 @@ Interactive whack a mole
 - 1 button
 - 4 pair of Red & green button to represent mole 
 
- <img width="500" src="./lab4img/1.jpeg">
+<img width="500" src="./Lab%4.jpeg">
 
 Claw machine 
 
