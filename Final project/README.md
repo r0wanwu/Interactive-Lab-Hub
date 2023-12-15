@@ -21,7 +21,7 @@ Final Project Presentations - December 12
 Write-up and documentation due - December 15 
 
 ## Objective
-For the final project we created a cat food dispenser. It is able to recogize cats, goose, and human. 
+For our final project, we created an interactive cat food dispenser. Using a webcam and computer visioning trained on a library of images, it is able to recogize cats, geese, and humans and output different responses based on what is in front of the camera. The goal of the machine is to be able to correctly recognize cats and have a mechanism to feed them when they are recognized.
 
  
 ## Description
@@ -53,6 +53,7 @@ December 14 - Write-up and documentation due
 
 - Constructing hardware of food dispenser with 3D printing
 - Computer visioning of recognizing animals vs humans
+- Testing device on live animals instead of images
 
 ## Parts needed
 - Cat and goose photos
@@ -69,13 +70,13 @@ Making changes to the feeder if the feeder is too complicated. We can make it si
 
 ## Documentation of design process
 
-1. 3D Printing of Components: Our project began with the design and 3D printing of various parts for our automated cat feeder. This included the main body, dispensing mechanism, and other structural elements.
-2. Assembly and Cleaning: Post-printing, we carefully cleaned and assembled these components, ensuring they fit together seamlessly and functioned properly.
-3. Integration of Motor: A crucial step was the integration of a motor into the feeder. This motor is responsible for rotating the dispenser, enabling the controlled release of cat food.
+1. 3D Printing of Components: Our project began with the design and 3D printing of various parts for our automated cat feeder. This included the main body, dispensing mechanism, and other structural elements. We researched existing 3D models of treat dispensers on Thingiverse and identified a model that would suit our needs. We received a 3D printing training from the MakerLab and printed out the raw components over the course of a week, which took abbout 40-45 hours of printing for all the parts.
+2. Assembly and Cleaning: Post-printing, we carefully cleaned and assembled these components, ensuring they fit together seamlessly and functioned properly. This involved shaving or sanding down the rough sides and any other imperfections from the printing that prevented the device from working properly (dispensing treats). 
+3. Integration of Motor: A crucial step was the integration of a motor into the feeder. This motor is responsible for rotating the dispenser, enabling the controlled release of cat food when the device recognizes a cat.
 4. Machine Learning Model Development: We developed a machine learning model capable of differentiating between humans, cats, and geese. This model is vital for the feeder's smart operation, allowing it to respond appropriately to different animals.
 5. Testing Phases:
-Phase 1 - Photographic Testing: We initially tested our device using photographs of cats and geese. This phase helped us to fine-tune the model's accuracy in differentiating between these animals.
-Phase 2 - Real-World Testing: The final testing phase involved real cats. This step was crucial in understanding the practical functionality and reliability of our feeder in a real-world scenario.
+Phase 1 - Photographic Testing: We initially tested our device using photographs of cats and geese, both printed and shown on a phone. This phase helped us to fine-tune the model's accuracy in differentiating between these animals. We also printed out images of cats and geese to make masks out of for testing, but the model had trouble recognizing just the faces/heads of the animals.
+Phase 2 - Real-World Testing: The final testing phase involved using the device with live cats. This step was crucial in understanding the practical functionality and reliability of our feeder in a real-world scenario and not just images of cats.
 
 
 
@@ -92,11 +93,11 @@ https://www.youtube.com/watch?v=19dnZaIqe7E
    
 ## Reflections on process (What have you learned or wish you knew at the start?)
 
-Model Limitations: We discovered that our model's accuracy is contingent on the type of image used. It was trained primarily on full-body images of geese, resulting in limited capability to recognize images showing only the heads of geese. We would have trained the model on more images of cats and geese with only the top parts of their body if we knew this at the start or had more time. 
+Model Limitations: We discovered that our model's accuracy with recognizing subjects is contingent on the type of images used in training. It was trained primarily on full-body images of geese, resulting in limited capability to recognize images showing only the heads of geese. Different species of geese also led to recognition errors, as it would read a white coat or background as a goose because it was trained on images of domestic white geese and also Canada geese, which are grey and white with black heads. We would have trained the model on more images of cats and geese with only the top parts of their body if we knew this limitation at the start or had more time. 
 
-Mechanical Challenges: The feeder's dispensing mechanism, particularly the rotator, was designed for average-sized cat food pellets. We observed that larger pieces of cat food tend to jam the mechanism. This issue suggests the need for a more adaptable design to accommodate varying sizes of cat food.
+Mechanical Challenges: The feeder's dispensing mechanism, particularly the rotator, was designed for hard, average-sized cat food pellets. We observed that larger pieces of cat food tend to jam the mechanism, and smaller pieces come out all at once. This issue suggests the need for a more adaptable design to accommodate varying sizes of cat food, or a specialized treat made specifically for the dispenser's dimensions.
 
-Placement of Video Camera: The video camera needs to be positioned at an appropriate angle to recognize objects better. If we had more time, we would have built a stand to position the camera so it is at a better angle. 
+Placement of Video Camera: The video camera needs to be positioned at an appropriate angle to recognize objects better. If we had more time, we would have built a stand to position the camera so it is at a better angle and can properly capture its subjects. 
 
 
 
